@@ -41,7 +41,7 @@
     border-radius: 4px;
     color: #fff;
     padding-top: 12px;
-    position: absolute;
+    position: fixed;
     top: 200px;
 }
 .fixed {
@@ -360,8 +360,8 @@ footer {
         width: 100%;
         height: 100%;
         background-color: #fff;
-        position: absolute;
-        top: 60px;
+        position: fixed;
+        top: 66px;
         z-index: 3;
         display: none;
     }

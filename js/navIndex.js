@@ -6,19 +6,21 @@ function img() {
 };
 
 img();
-window.onscroll = function () {
-    if (mianBaobtn.style.display=="block") {
-        my$("asideNav").style.top = 60 + "px";
-        return;
+var mianBaobtn = my$("mianbaoxie");
+var asides =  my$("asideNav");
+function scrollHere(){
+    window.onscroll = function scrollHere() {
         if (getScroll().top >= 100 + my$("asideNav").offsetHeight) {
             my$("asideNav").className = "aside-nav fixed";
             my$("asideNav").style.top = 100 + "px";
-         } else {
-             my$("asideNav").className = "aside-nav";
-             my$("asideNav").style.top = 200 + "px";
+        }else {
+            my$("asideNav").className = "aside-nav";
+            my$("asideNav").style.top = 200 + "px";
+        }
     }
-    }
-};
+}
+
+
 // 以上是侧边栏固定
 my$("close").onclick = function () {
     my$("items").style.display="none";
@@ -45,8 +47,7 @@ for (var i=0;i<lis.length;i++) {
 // 文章Tab栏的功能实现
 
 // 面包屑实现功能
-var mianBaobtn = my$("mianbaoxie");
-var asides =  my$("asideNav");
+
 
 mianBaobtn.onclick=function () {
     if (asides.style.display!="block") {
@@ -63,3 +64,18 @@ mianBaobtn.onclick=function () {
         my$("ani02").className="";
     }
 };
+
+var as = asides.children;
+for(var i=0;i<=as.length;i++) {
+    as[i].onclick=function () {
+        asides.style.display="none";
+        my$("ani03").style.height=0;
+        my$("ani03").style.borderBottom="2px solid #2694b0";
+        my$("ani01").className="";
+        my$("ani02").className="";
+    }
+}
+
+
+
+scrollHere();
