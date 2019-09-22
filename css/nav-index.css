@@ -176,52 +176,8 @@
     transition: 0.3s;
     box-shadow: 0 1px 3px 2px rgba(0,0,0,.05);
 }
-/*列表样式|字体颜色*/
-.list01 {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #64d0eb;
-    display: block;
-    margin-right: 6px;
-    transform: translateY(-2px);
-}
-.list03 {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #33ca6b;
-    display: block;
-    margin-right: 6px;
-    transform: translateY(-2px);
-}
-.list02 {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #fe5736;
-    display: block;
-    margin-right: 6px;
-    transform: translateY(-2px);
-}
-.corlor01 {
-    color: #64d0eb;
-}
-.corlor02 {
-    color: #33ca6b;
-}
-.corlor03 {
-    color: #fe5736;
-}
-.bg01 {
-    background-color: #f9f9f9;
-    overflow: hidden;
-}
-.bg02 {
-    background-color: #edf1f5;
-    overflow: hidden;
-}
-/*列表样式结束*/
+
+
 #oftenUse li span {
     color: #999;
     margin-top: 6px;
@@ -268,7 +224,6 @@
 }
 #footHref {
     display: block;
-    overflow: hidden;
     margin-top: -4px;
 }
 #footHref a {
@@ -364,13 +319,6 @@
     margin-right: 10px;
     transform: translateY(3px);
 }
-.dispayNone {
-    display: none;
-}
-.dispayBlock {
-    display: block;
-}
-
 .foot-01 {
     background-color: rgb(127,127,127);
 }
@@ -395,4 +343,93 @@ footer {
     line-height: 12px;
     font-size: 12px;
     padding-bottom: 16px;
+}
+@media (max-width: 1280px) {
+    #for-none {
+        display: none;
+    }
+    #clear {
+        display: none;
+    }
+}
+@media (max-width: 1080px) {
+    .mianbaoxie {
+        display: block;
+    }
+    .aside-nav {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        z-index: 3;
+        display: none;
+    }
+    .aside-nav li:nth-child(2) {
+        margin-top: 30px;
+    }
+    .aside-nav li a{
+        color: #333333;
+        width: calc(50% + 20px);
+        font-size: 26px;
+        line-height: 60px;
+        padding-left: 40px;
+        text-align: right;
+    }
+    .aside-nav li:hover {
+        background-color: #fff;
+    }
+    .ii span {
+        display: none;
+    }
+    .title-asideNav {
+        display: none;
+    }
+    /*主要的部分*/
+    .main {
+        margin-left: 0px;
+        width: 100%  ;
+    }
+    .text li div a {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: block;
+        width: calc(100% - 60px);
+        overflow: hidden;
+    }
+    .trueNav li span {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 8px;
+    }
+    #footHref {
+        padding-top: 0px;
+        margin-bottom: 4px;
+    }
+}
+@media (max-width: 660px) {
+    .trueNav li {
+        margin-left: 20px;
+    }
+    #oftenUse li {
+        margin-left: 20px;
+    }
+    .title {
+        margin-left: 20px;
+    }
+    .article-btn {
+        margin-left: 20px;
+    }
+    .text {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 500px) {
+    #oftenUse li {
+        margin-left: 0;
+        margin-right: calc((100% - 423.55px)/3);
+    }
 }

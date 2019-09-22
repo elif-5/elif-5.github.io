@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.95,user-scalable=no" />
     <title>我的工作空间</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/nav-index.css">
@@ -18,23 +19,23 @@
         <ul class="top-nav" id="top-nav">
             <li class="hover">
                 <div class="topIcons i01 hover01"></div>
-                <a style="color: #64d0eb">网站检索</a>
+                <a style="color: #64d0eb" target="_self">网站检索</a>
             </li>
             <li>
                 <div class="topIcons i02"></div>
-                <a href="#">代码案例</a>
+                <a href="#" target="_self">代码案例</a>
             </li>
             <li>
                 <div class="topIcons"></div>
-                <a href="#">笔记成册</a>
+                <a href="#" target="_self">笔记成册</a>
             </li>
             <li>
                 <div class="topIcons"></div>
-                <a href="#">图表演示</a>
+                <a href="#" target="_self">图表演示</a>
             </li>
             <li>
                 <div class="topIcons"></div>
-                <a href="#">日程课程</a>
+                <a href="#" target="_self">日程课程</a>
             </li>
         </ul>
         <div class="r-function">
@@ -50,6 +51,11 @@
 </div>
 <aside id="items">
     <div class="mt">
+        <div class="mianbaoxie" id="mianbaoxie">
+            <span id="ani01"></span>
+            <span id="ani03"></span>
+            <span id="ani02"></span>
+        </div>
         <ul class="aside-nav" id="asideNav">
             <li class="title-asideNav">
                 <span id="close">快速检索</span>
@@ -64,7 +70,7 @@
             <li><a href="#gongju" target="_self">工具大全</a></li>
             <li><a href="#ziyuan" target="_self">资源下载</a></li>
             <li><a href="#zhenqi" target="_self">政企网站</a></li>
-            <li><a href="#wenzhang" target="_self">文章收藏</a>
+            <li class="ii"><a href="#wenzhang" target="_self">文章收藏</a>
                 <span class="mac"></span>
                 <span class="mac-before"></span>
                 <span class="mac-after"></span>
@@ -94,7 +100,7 @@
                 </li>
                 <li>
                     <a href="https://www.yuque.com/elif" class="img"></a>
-                    <span>文档、知识管理平台</span>
+                    <span>文档管理平台</span>
                 </li>
                 <li>
                     <a href="http://sjt.hubei.gov.cn/" class="img"></a>
@@ -150,7 +156,7 @@
                 </li>
                 <li>
                     <a href="https://www.uisdc.com/" class="nets corlor03">优设网</a>
-                    <span>转载优秀文章的网站</span>
+                    <span id="for-none">转载优秀文章的网站</span>
                     <span id="footHref">
                         <a href="https://uiiiuiii.com/">优优教程</a>
                         <a class="none"></a>
@@ -466,7 +472,7 @@
                 <li>思想杂谈</li>
             </ul>
             <ul class="text" id="text">
-                <li class="dispayBlock">
+                <li class="displayBlock">
                     <div>
                         <span class="list-01"></span>
                         <a href="https://www.uisdc.com/200-models-free-commercial-fonts">
@@ -486,7 +492,7 @@
                         </a>
                     </div>
                 </li>
-                <li class="dispayNone">
+                <li class="displayNone">
                     <div>
                         <span class="list-01"></span>
                         <a href="https://www.uisdc.com/10-best-free-animation-libraries">
@@ -500,7 +506,7 @@
                         </a>
                     </div>
                 </li>
-                <li class="dispayNone">
+                <li class="displayNone">
                     <div>
                         <span class="list-01"></span>
                         <a href="https://www.uisdc.com/bilibili-learning-design">
@@ -532,6 +538,9 @@
 
 <script src="js/normalize.js"></script>
 <script src="js/navIndex.js"></script>
+<script>
+
+</script>
 
 <script>
 

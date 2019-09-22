@@ -21,6 +21,58 @@ a {
     max-width: 1280px;
     margin: 0 auto;
 }
+/*列表样式|字体颜色*/
+.list01 {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #64d0eb;
+    display: block;
+    margin-right: 6px;
+    transform: translateY(-2px);
+}
+.list03 {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #33ca6b;
+    display: block;
+    margin-right: 6px;
+    transform: translateY(-2px);
+}
+.list02 {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fe5736;
+    display: block;
+    margin-right: 6px;
+    transform: translateY(-2px);
+}
+.corlor01 {
+    color: #64d0eb;
+}
+.corlor02 {
+    color: #33ca6b;
+}
+.corlor03 {
+    color: #fe5736;
+}
+.bg01 {
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+.bg02 {
+    background-color: #edf1f5;
+    overflow: hidden;
+}
+.displayNone {
+    display: none;
+}
+.displayBlock {
+    display: block;
+}
+/*列表样式结束*/
 /*以上是通用的设置*/
 nav {
     width: 100%;
@@ -126,3 +178,112 @@ nav {
     background-image: url("../img/nav-h-1.png") !important
 }
 /*上面是导航栏部分*/
+.mianbaoxie {
+    width: 36px;
+    height: 28px;
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    z-index: 3;
+    padding-top: 8px;
+    overflow: hidden;
+    display: none;
+    /*background-color: rgba(255,255,255,0.9);*/
+}
+.mianbaoxie span {
+    width: 20px;
+    height: 0;
+    margin-left: 8px;
+    display: block;
+    border-bottom: 2px solid #2694b0;
+    margin-top: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+    animation: linear;
+}
+.ani01 {
+    transform-origin: bottom right;
+    transform: rotate(-45deg);
+}
+.ani02 {
+    transform-origin: bottom right;
+    transform: rotate(45deg);
+}
+.ani03 {
+    border-bottom: 2px solid #2694b0;
+}
+
+
+
+/*响应式*/
+@media (max-width: 1080px) {
+    .say {
+        display: none;
+    }
+    nav {
+        overflow: hidden;
+        height: 100%;
+    }
+    .logo {
+        clear: left;
+        text-align: center;
+        width: 100%;
+    }
+    .top-nav {
+        clear: left;
+        width: 100%;
+        padding: 0 calc((100% - 470px)/2) 1px;
+        overflow: hidden;
+    }
+    .top-nav li:hover {
+        border: none;
+    }
+    .top-nav li {
+        background-color: #404040;
+        border: none;
+        margin-top: 10px;
+    }
+    .top-nav div {
+        display: none;
+    }
+    .r-function {
+        display: none;
+    }
+}
+@media (max-width: 1080px) {
+    .mianbaoxie {
+        display: block;
+    }
+    .note {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
+        overflow: hidden;
+    }
+    .lastword {
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .top-nav li a {
+        font-size: 14px;
+    }
+
+    .top-nav {
+        padding: 0 10px 1px;
+    }
+
+    .top-nav li {
+        padding: 0 calc((100% - 305px) / 10);
+    }
+}
+
+@media (max-width: 430px) {
+    .top-nav li a {
+        font-size: 14px;
+    }
+    .top-nav li{
+        padding: 0 calc((100% - 305px)/10);
+    }
+
+}
