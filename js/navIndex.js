@@ -34,7 +34,7 @@ for (var i=0;i<lis.length;i++) {
 
         for (var j=0;j<lis.length;j++){
             lis[j].removeAttribute("class");
-            texts[j].className="dispayNone";
+            texts[j].className="displayNone";
         }
         this.className="put-on";
         var num=this.getAttribute("index");
