@@ -55,7 +55,6 @@
 .aside-nav li a{
     color: #fff;
     width: 100%;
-    display: block;
     padding-left: 50px;
     line-height: 26px;
 }
@@ -365,15 +364,15 @@ footer {
         z-index: 3;
         display: none;
     }
-    .aside-nav li:nth-child(2) {
-        margin-top: 30px;
+    .aside-nav li {
+        padding-left: calc(50% - 100px) ;
+    /*width:;*/
     }
     .aside-nav li a{
         color: #333333;
-        width: calc(50% + 20px);
         font-size: 26px;
         line-height: 60px;
-        padding-left: 40px;
+        width: 100%;
         text-align: right;
     }
     .aside-nav li:hover {
