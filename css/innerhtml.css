@@ -13,8 +13,9 @@
     border-top-left-radius: 12px;
     line-height: 52px;
     position: relative;
+    animation: ease;
     transform: translateY(-10px);
-    transition: .5s;
+    transition: .4s;
     box-shadow: 0 -1px 3px 1px rgba(84, 163, 190, 0.5);
 }
 .headline {
@@ -45,6 +46,8 @@
 .text {
     overflow: hidden;
     width: 100%;
+    margin-top: 10px;
+    transform: translateY(8px);
 }
 .text li div {
     width: calc(25% - 40px);
@@ -53,8 +56,9 @@
     padding: 20px;
 }
 .text li div:hover {
-    background-color: #e0f9ff;
-    transition: .3s;
+    background-color: #fff;
+    animation-delay: 0.3s;
+    transition: .5s;
 }
 .text li div a {
     white-space: nowrap;
@@ -65,8 +69,9 @@
     font-weight: 700;
 }
 .text li div a:hover {
-    color: #fe5736;
+    color: #2694b0;
     text-decoration: underline;
+    transition: .5s;
 }
 .text li div span {
     display: block;

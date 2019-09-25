@@ -71,6 +71,8 @@ a {
 }
 .displayBlock {
     display: block;
+    transform: translateY(-8px);
+    transition: .6s ease;
 }
 /*列表样式结束*/
 /*以上是通用的设置*/
