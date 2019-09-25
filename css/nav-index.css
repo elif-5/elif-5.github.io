@@ -291,57 +291,17 @@
 .text li div a:hover {
     color: #2694b0;
 }
-.list-01 {
-    width: 10px;
-    height: 10px;
-    background-color: #64d0eb;
-    border-radius: 50%;
-    float: left;
-    margin-right: 10px;
-    transform: translateY(2px);
+.location {
+    position: relative;
 }
-.list-02 {
-    width: 10px;
-    height: 10px;
-    background-color: #33ca6b;
-    border-radius: 50%;
-    float: left;
-    margin-right: 10px;
-    transform: translateY(2px);
-}
-.list-03 {
-    width: 10px;
-    height: 10px;
-    background-color: #fe5736;
-    border-radius: 50%;
-    float: left;
-    margin-right: 10px;
-    transform: translateY(3px);
-}
-.foot-01 {
-    background-color: rgb(127,127,127);
-}
-.word {
-    text-align: center;
-    color: #fff;
-    line-height: 40px;
-    font-size: 14px;
-}
-footer {
-    background-color: #404040;
-}
-.note {
-    text-align: center;
-    color: #fff;
-    line-height: 36px;
-    font-size: 14px;
-}
-.lastword {
-    text-align: center;
-    color: #999;
-    line-height: 12px;
-    font-size: 12px;
-    padding-bottom: 16px;
+.computer {
+    background: url("../img/computer.png") no-repeat;
+    width: 248px;
+    height: 126px;
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    z-index: 3;
 }
 @media (max-width: 1280px) {
     #for-none {
@@ -424,6 +384,9 @@ footer {
     }
     .text {
         margin-left: 20px;
+    }
+    .computer {
+        display: none;
     }
 }
 @media (max-width: 500px) {

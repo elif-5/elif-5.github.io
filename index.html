@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=0.95,user-scalable=no" />
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/nav-index.css">
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <base target="_blank">
 </head>
 <body>
@@ -19,11 +20,11 @@
         <ul class="top-nav" id="top-nav">
             <li class="hover">
                 <div class="topIcons i01 hover01"></div>
-                <a style="color: #64d0eb" target="_self">网站检索</a>
+                <a href="" style="color: #64d0eb" target="_self">网站检索</a>
             </li>
             <li>
                 <div class="topIcons i02"></div>
-                <a href="#" target="_self">代码案例</a>
+                <a href="html/codes.html" target="_self">代码案例</a>
             </li>
             <li>
                 <div class="topIcons"></div>
@@ -46,7 +47,7 @@
 </nav>
 <div class="say">
     <div class="mt">
-    <span id="notice"><p class="hi">欢迎，本网站初步实现静态网页，搜索等功能暂时还没有实现，本人正在学习相关的编程，加油！</p><div class="notice-fix">修改<p></p></div></span>
+    <div id="notice"><p class="hi">欢迎，本网站初步实现静态网页，搜索等功能暂时还没有实现，本人正在学习相关的编程，加油！</p><div class="notice-fix">修改<p></p></div></div>
     </div>
 </div>
 <aside id="items">
@@ -92,7 +93,7 @@
 
 <section class="oftenUse">
     <div class="mt">
-        <div class="main">
+        <div class="main headline">
             <span class="title"><a name="changyong"></a>常用网站</span>
             <ul id="oftenUse">
                 <li>
@@ -132,7 +133,7 @@
 
 <section class="bg01">
     <div class="mt">
-        <div class="main">
+        <div class="main headline">
             <span class="title"><a name="daohang"></a>导航网站</span>
             <ul id="navNet" class="trueNav">
                 <li>
@@ -158,7 +159,7 @@
 
 <section class="bg02">
     <div class="mt">
-        <div class="main">
+        <div class="main headline">
             <span class="title"><a name="sheji"></a>设计参考</span>
             <ul id="designNet" class="trueNav">
                 <li>
@@ -234,7 +235,7 @@
 
 <section class="bg01">
     <div class="mt">
-        <div class="main">
+        <div class="main headline">
             <span class="title"><a name="qianduan"></a>前端文档</span>
             <ul id="webNet" class="trueNav">
                 <li>
@@ -295,7 +296,7 @@
 
 <section class="bg02">
     <div class="mt">
-        <div class="main">
+        <div class="main headline">
             <span class="title"><a name="chongdian"></a>充电学习</span>
             <ul id="studyNet" class="trueNav">
                 <li>
@@ -362,7 +363,7 @@
 
 <section class="bg01">
     <div class="mt">
-        <div class="main">
+        <div class="main headline">
             <span class="title"><a name="gongju"></a>工具大全</span>
             <ul id="toolNet" class="trueNav">
                 <li>
@@ -426,7 +427,7 @@
 
 <section class="bg02">
     <div class="mt">
-        <div class="main">
+        <div class="main headline">
             <span class="title"><a name="ziyuan"></a>资源下载</span>
             <ul id="sourceNet" class="trueNav">
                 <li>
@@ -452,7 +453,7 @@
 
 <section class="bg01">
     <div class="mt">
-        <div class="main">
+        <div class="main headline">
             <span class="title"><a name="zhenqi"></a>政企网站</span>
             <ul id="schoolNet" class="trueNav">
                 <li>
@@ -474,7 +475,7 @@
 
 <section class="bg02">
     <div class="mt">
-        <div class="main">
+        <div class="main headline">
             <span class="title"><a name="wenzhang"></a>文章收藏</span>
             <div class="clear-fix"></div>
             <ul id="articleNet" class="article-btn">
@@ -530,6 +531,7 @@
 
 
 </section>
+<div class="mt location"><div class="computer"></div></div>
 
 <section class="foot-01">
     <div class="mt word">
@@ -550,11 +552,8 @@
 <script src="js/normalize.js"></script>
 <script src="js/navIndex.js"></script>
 <script>
-
+    ScrollReveal().reveal('.headline',{ delay: 100 });
 </script>
 
-<script>
-
-</script>
 </body>
 </html>

@@ -98,7 +98,8 @@ nav {
     float: left;
     padding: 0 15px;
     height: 72px;
-    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 .top-nav li a {
     color: #fff;
@@ -175,8 +176,74 @@ nav {
     box-sizing: border-box;
 }
 .hover01 {
-    background-image: url("../img/nav-h-1.png") !important
+     background-image: url("../img/nav-h-1.png")!important;
+ }
+.hover02 {
+    background-image: url("../img/nav-h-2.png")!important;
 }
+.page-tittle {
+    line-height: 200px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: calc(50% - 95px);
+    text-shadow: 1px 2px 6px rgba(0,0,0,.8);
+}
+.list-01 {
+    width: 10px;
+    height: 10px;
+    background-color: #64d0eb;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    transform: translateY(2px);
+}
+.list-02 {
+    width: 10px;
+    height: 10px;
+    background-color: #33ca6b;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    transform: translateY(2px);
+}
+.list-03 {
+    width: 10px;
+    height: 10px;
+    background-color: #fe5736;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    transform: translateY(3px);
+}
+.foot-01 {
+    background-color: rgb(127,127,127);
+}
+.word {
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    font-size: 14px;
+}
+footer {
+    background-color: #404040;
+}
+.note {
+    text-align: center;
+    color: #fff;
+    line-height: 36px;
+    font-size: 14px;
+}
+.lastword {
+    text-align: center;
+    color: #999;
+    line-height: 12px;
+    font-size: 12px;
+    padding-bottom: 16px;
+}
+
+
+
 /*上面是导航栏部分*/
 .mianbaoxie {
     width: 36px;

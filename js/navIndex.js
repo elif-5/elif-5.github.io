@@ -45,9 +45,6 @@ for (var i = 0; i < lis.length; i++) {
         }
         this.className = "put-on";
         var num = this.getAttribute("index");
-        for (var k = 0; k < texts.length; k++) {
-
-        }
         texts[num].className = "displayBlock";
     }
 }
