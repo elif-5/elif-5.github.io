@@ -29,3 +29,20 @@ for (var i = 0; i < lis.length; i++) {
         texts[num].className = "displayBlock";
     }
 }
+// 给每个a标签新增前面命名
+var frontA01 = my$("for-a01").getElementsByTagName("a");
+var frontA02 = my$("for-a02").getElementsByTagName("a");
+var frontA03 = my$("for-a03").getElementsByTagName("a");
+var frontA04 = my$("for-a04").getElementsByTagName("a");
+
+
+function listName(fr01){
+    for (var i=0;i<fr01.length;i++) {
+        var a = document.createTextNode("0"+(i+1)+".");
+        fr01[i].prepend(a);
+    }
+}
+listName(frontA01);
+listName(frontA02);
+listName(frontA03);
+listName(frontA04);

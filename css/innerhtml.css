@@ -57,7 +57,6 @@
 }
 .text li div:hover {
     background-color: #fff;
-    animation-delay: 0.3s;
     transition: .5s;
 }
 .text li div a {
@@ -67,6 +66,7 @@
     overflow: hidden;
     margin-bottom: 10px;
     font-weight: 700;
+
 }
 .text li div a:hover {
     color: #2694b0;
