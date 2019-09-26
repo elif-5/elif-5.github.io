@@ -21,6 +21,84 @@ a {
     max-width: 1280px;
     margin: 0 auto;
 }
+/*这里是加载动画*/
+body {
+    height: 100%;
+}
+.load-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #1a5669;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+
+    25% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    75% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
+
+
+/*加载动画结束*/
 /*列表样式|字体颜色*/
 .list01 {
     width: 4px;
@@ -335,6 +413,7 @@ footer {
 @media (max-width: 500px) {
     .top-nav li a {
         font-size: 14px;
+        width: 100%;
     }
 
     .top-nav {

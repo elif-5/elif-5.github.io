@@ -29,19 +29,20 @@ for (var i = 0; i < lis.length; i++) {
         texts[num].className = "displayBlock";
     }
 }
-// 给每个a标签新增前面命名
+
+// 给每个a标签新增前面的序号
 var frontA01 = my$("for-a01").getElementsByTagName("a");
 var frontA02 = my$("for-a02").getElementsByTagName("a");
 var frontA03 = my$("for-a03").getElementsByTagName("a");
 var frontA04 = my$("for-a04").getElementsByTagName("a");
-
-
+// 封装函数-将序号追加到前面
 function listName(fr01){
     for (var i=0;i<fr01.length;i++) {
         var a = document.createTextNode("0"+(i+1)+".");
         fr01[i].prepend(a);
     }
 }
+// 调用函数追加序号
 listName(frontA01);
 listName(frontA02);
 listName(frontA03);

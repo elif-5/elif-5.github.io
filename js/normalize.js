@@ -1,3 +1,8 @@
+// 加载动画
+$(window).on("load",function(){
+    $(".load-wrapper").fadeOut("slow");
+});
+// 加载动画jQuery代码结束
 function my$(id) {
     return document.getElementById(id);
 }

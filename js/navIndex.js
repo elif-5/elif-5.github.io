@@ -29,6 +29,7 @@ scrollHere();
 // 侧边栏隐藏关闭按钮
 my$("close").onclick = function () {
     my$("items").style.display = "none";
+    console.log("咦，导航栏呢？你发现了这个“bug”啦？没错是我故意写的")
 };
 
 
