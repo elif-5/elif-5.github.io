@@ -57,6 +57,7 @@
     width: 100%;
     padding-left: 50px;
     line-height: 26px;
+
 }
 .aside-nav li:hover {
     background-color: #737373;
@@ -377,8 +378,8 @@
         margin-left: 20px;
     }
     .title {
-        margin-left: 20px;
-    }
+         margin-left: 20px;
+     }
     .article-btn {
         margin-left: 20px;
     }

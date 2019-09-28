@@ -48,3 +48,4 @@ searcharea.onblur = function () {
     };
 };
 //上面是搜索框的效果
+
