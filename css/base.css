@@ -144,6 +144,9 @@ body {
     background-color: #edf1f5;
     overflow: hidden;
 }
+.bgcode {
+    background-color: #edf1f5;
+}
 .displayNone {
     display: none;
 }
