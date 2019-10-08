@@ -7,6 +7,10 @@
     width: 100%;
     background: url("../img/diwen2.jpg") no-repeat #f9f9f9 top center;
 }
+.page-T3 {
+    width: 100%;
+    background: url("../img/diwen3.jpg") no-repeat #f9f9f9 top center;
+}
 @media (max-width: 550px) {
     .page-T2 {
         background: url("../img/diwen2-s.jpg") no-repeat #f9f9f9 top center;
@@ -41,7 +45,6 @@
     color: #333;
     width: 100%;
     text-align: center;
-    height: 42px;
     display: block;
 }
 .article-btn li {
@@ -358,5 +361,8 @@
     }
     .text li div {
         border-bottom: 0.5px solid #cccdcd;
+    }
+    #clearhi {
+        clear: left;
     }
 }
