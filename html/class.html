@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.95,user-scalable=no" />
+    <title>代码案例</title>
+    <script src="../js/jquery.min.js"></script>
+    <base target="_blank">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/innerhtml.css">
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Raleway:300,500|Arvo:700' rel='stylesheet' type='text/css'> -->
+    <!--<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>-->
+    <!--[if lte IE 8]>
+    <style>.support-note .note-ie {
+        display: block;
+    }</style><![endif]-->
+    <!--<script type="text/javascript">-->
+        <!--var _gaq = _gaq || [];-->
+        <!--_gaq.push(['_setAccount', 'UA-7243260-2']);-->
+        <!--_gaq.push(['_trackPageview']);-->
+        <!--(function () {-->
+            <!--var ga = document.createElement('script');-->
+            <!--ga.type = 'text/javascript';-->
+            <!--ga.async = true;-->
+            <!--ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';-->
+            <!--var s = document.getElementsByTagName('script')[0];-->
+            <!--s.parentNode.insertBefore(ga, s);-->
+        <!--})();-->
+    <!--</script>-->
+
+</head>
+<body>
+<div class="load-wrapper" id="preloader">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+<nav id="nav">
+    <div class="mt">
+        <ul class="logo">
+            <li>我的工作空间</li>
+            <li>for my work & study</li>
+        </ul>
+        <ul class="top-nav" id="top-nav">
+            <li>
+                <div class="topIcons i01"></div>
+                <a href="../index.html" target="_self">网站检索</a>
+            </li>
+            <li>
+                <div class="topIcons i02"></div>
+                <a href="codes.html" target="_self">代码案例</a>
+            </li>
+            <li>
+                <div class="topIcons"></div>
+                <a href="nodes.html" target="_self">笔记成册</a>
+            </li>
+            <li>
+                <div class="topIcons"></div>
+                <a href="graph.html" target="_self">图表演示</a>
+            </li>
+            <li  class="hover">
+                <div class="topIcons hover05"></div>
+                <a style="color: #64d0eb" href="" target="_self">日程课程</a>
+            </li>
+        </ul>
+        <div class="r-function">
+            <input type="text" value="快速查找" id="search" name="search"><span></span>
+            <a href="#" class="enter">内容管理</a>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+
+    <header>
+
+        <h1>我的课程</h1>
+        <h2>
+            MEM工程管理课程表，点击下方的按钮查看内容
+            <span class="demo-note">电脑端查阅，效果升级</span>
+        </h2>
+
+        <div class="support-note"><!-- let's check browser support with modernizr -->
+            <span class="no-cssanimations">你的设备不支持CSS animations</span>
+            <span class="no-csstransforms">你的设备不支持CSS transforms</span>
+            <span class="no-csstransforms3d">你的设备不支持CSS 3D</span>
+            <span class="no-csstransitions">你的设备不支持CSS transitions</span>
+            <span class="note-ie">Sorry, only modern browsers.</span>
+        </div>
+
+    </header>
+
+    <section class="main">
+
+        <div id="rm-container" class="rm-container">
+
+            <div class="rm-wrapper">
+
+                <div class="rm-cover">
+
+                    <div class="rm-front">
+                        <div class="rm-content">
+
+                            <div class="rm-logo"></div>
+                            <h2>HUST MEM Class</h2>
+                            <h3>工程管理的课程安排&老师</h3>
+
+                            <a href="#" class="rm-button-open">点击这里打开</a>
+                            <div class="rm-info">
+                                <p>
+                                    <strong>华中科技大学-管理学院</strong><br>
+                                    2019届MEM<br>
+                                    工程管理研究生<br>
+                                    <strong>学期</strong> 2019.09-2022.03<br>
+                                    <strong>地址</strong> 武汉市洪山区主校区
+                                </p>
+                            </div>
+
+                        </div><!-- /rm-content -->
+                    </div><!-- /rm-front -->
+
+                    <div class="rm-back">
+                        <div class="rm-content">
+                            <h4>第一学期</h4>
+                            <dl>
+                                <dt><a href="#" class="rm-viewdetails" data-thumb="images/1.jpg">项目管理</a></dt>
+                                <dd>周水银--7-10周周六 &nbsp;&nbsp;<span>考试:11月23日</span>
+                                    <br> 10月19日、10月26日、11月2日、11月9日
+                                </dd>
+
+                                <dt><a href="#" class="rm-viewdetails" data-thumb="images/2.jpg">中国特色社会主义理论与实践
+                                </a></dt>
+                                <dd>刘家俊--7-10周周日 &nbsp;&nbsp;<span>考试:11月16日</span><br>
+                                    10月20日、10月27日、11月3日、11月10日
+                                </dd>
+
+                                <dt><a href="#" class="rm-viewdetails" data-thumb="images/3.jpg">工程定量分析方法
+                                </a></dt>
+                                <dd>杨超--11-14周周六 &nbsp;&nbsp;<span>考试:12月21日</span><br>
+                                    11月16日、11月23日、11月30日、12月7日
+                                </dd>
+
+                                <dt><a href="#" class="rm-viewdetails" data-thumb="images/4.jpg">质量与可靠性管理
+                                </a></dt>
+                                <dd>熊慧--11-14周周日 &nbsp;&nbsp;<span>考试:待定</span><br>
+                                    11月17日、11月24日、12月1日、12月8日
+                                </dd>
+
+                                <dt><a href="#" class="rm-viewdetails" data-thumb="images/5.jpg">工程信息管理</a></dt>
+                                <dd>马辉民--15-18周周六 &nbsp;&nbsp;<span>考试:待定</span><br>
+                                    12月14日、12月21日、12月28日、1月4日
+                                </dd>
+
+                                <dt><a href="#" class="rm-viewdetails" data-thumb="images/6.jpg">工程经济学</a></dt>
+                                <dd>罗光--15-18周周日 &nbsp;&nbsp;<span>考试:待定</span><br>
+                                    12月15日、12月22日、12月29日、1月5日
+                                </dd>
+
+                            </dl>
+
+                            <h4>注意</h4>
+                            <dl>
+                                <dd style="font-family: 'Microsoft YaHei UI';color: #666">
+                                    上课时间：上午:9:00—12:20;下午:2:00－5:20;
+                                    <br>晚上:6:00－9:20。课间休息20分钟
+                                </dd>
+                            </dl>
+                        </div><!-- /rm-content -->
+                        <div class="rm-overlay"></div>
+
+                    </div><!-- /rm-back -->
+
+                </div><!-- /rm-cover -->
+
+                <div class="rm-middle">
+                    <div class="rm-inner">
+                        <div class="rm-content">
+                            <h4>剩余课程</h4>
+                            <dl>
+                                <dt>第一外国语（英语一）</dt>
+                                <dd>This class is not defined</dd>
+
+                                <dt>中国语文水平达标测试</dt>
+                                <dd>This class is not defined</dd>
+
+                                <dt>学术规范与论文写作</dt>
+                                <dd>This class is not defined</dd>
+
+                                <dt>信息化战略</dt>
+                                <dd>This class is not defined</dd>
+
+                                <dt>工程管理仿真分析</dt>
+                                <dd>This class is not defined</dd>
+
+                                <dt>EPR沙盘模拟</dt>
+                                <dd>This class is not defined</dd>
+
+                                <dt>系统工程</dt>
+                                <dd>This class is not defined</dd>
+
+                                <dt>工程优化决策</dt>
+                                <dd>This class is not defined</dd>
+
+                                <dt>工程管理导论</dt>
+                                <dd>This class is not defined</dd>
+
+                            </dl>
+                        </div><!-- /rm-content -->
+                        <div class="rm-overlay"></div>
+                    </div><!-- /rm-inner -->
+                </div><!-- /rm-middle -->
+
+                <div class="rm-right">
+
+                    <div class="rm-front">
+
+                    </div>
+
+                    <div class="rm-back">
+                        <span class="rm-close">关闭</span>
+                        <div class="rm-content">
+                            <h4>其他部分</h4>
+                            <dl>
+                                <dt>暂时没有补充</dt>
+                                <dd>There is nothing in this block</dd>
+
+                            </dl>
+                            <div class="rm-order">
+                                <p>1、缺课累计达到或超过授课时数的1/3，则须重修该门课程；2、学生应独立完成作业和考试，如有雷同作业和试卷，无论是抄袭和被抄袭，该科课程成绩一律作废计0分</p>
+                            </div>
+                        </div><!-- /rm-content -->
+                    </div><!-- /rm-back -->
+
+                </div><!-- /rm-right -->
+            </div><!-- /rm-wrapper -->
+
+        </div><!-- /rm-container -->
+
+    </section>
+
+</div>
+
+
+<section class="foot-01">
+    <div class="mt word">
+        我的工作站 - 最小众的网站
+    </div>
+</section>
+<footer>
+    <div class="mt">
+        <div class="note">我认为：未来最应该发展的工作是
+            <span style="color: #64d0eb">人工智能</span>、
+            <span style="color: #33ca6b">环境保护</span>
+            以及建设<span style="color: #fe5736">人类命运共同体</span>
+        </div>
+        <div class="lastword">为此要不断学习、积累经验，同时健康养生，到了将来，或将见证基建狂魔兔子把天堂建设到人间!好好学习，认真生活</div>
+    </div>
+</footer>
+
+
+
+<script src="../js/normalize.js"></script>
+<script src="../js/innerhtml.js"></script>
+<!-- jQuery if needed -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">
+    $(function () {
+        Menu.init();
+    });
+</script>
+<script src="js/demoad.js"></script>
+
+</body>
+</html>
