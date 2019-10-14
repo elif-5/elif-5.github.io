@@ -35,6 +35,8 @@ var frontA01 = my$("for-a01").getElementsByTagName("a");
 var frontA02 = my$("for-a02").getElementsByTagName("a");
 var frontA03 = my$("for-a03").getElementsByTagName("a");
 var frontA04 = my$("for-a04").getElementsByTagName("a");
+var frontA05 = my$("for-a05").getElementsByTagName("a");
+var frontA06 = my$("for-a06").getElementsByTagName("a");
 // 封装函数-将序号追加到前面
 function listName(fr01){
     for (var i=0;i<fr01.length;i++) {
@@ -47,5 +49,6 @@ listName(frontA01);
 listName(frontA02);
 listName(frontA03);
 listName(frontA04);
-
+listName(frontA05);
+listName(frontA06);
 
