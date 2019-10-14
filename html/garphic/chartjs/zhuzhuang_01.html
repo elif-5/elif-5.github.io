@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Bar Chart</title>
+	<script src="../vendors/Chart.min.js"></script>
+	<script src="../vendors/utils.js"></script>
+	<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="container" style="width: 75%;margin: 0 auto;">
+		<canvas id="canvas"></canvas>
+	</div>
+	<div style="margin: 0 auto;">
+		<button id="randomizeData">随机数据</button>
+		<button id="addDataset">增加数据</button>
+		<button id="removeDataset">移除数据</button>
+		<button id="addData">增加月</button>
+		<button id="removeData">移除月</button>
+	</div>
+	
+	<script>
+		var MONTHS = ['一月', '二月', '三月', '四月', '五月', '六月', '七月','八月', '九月', '十月', '十一月', '十二月'];
+		var color = Chart.helpers.color;
+		var barChartData = {
+			labels: ['一月', '二月', '三月', '四月', '五月', '六月', '七月'],
+			datasets: [{
+				label: '总量',
+				backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.red,
+				borderWidth: 1,
+				data: [
+					2000,
+					1800,
+					2400,
+					1950,
+					890,
+					1200,
+					2800,
+				]
+			}, {
+				label: '增量',
+				backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.blue,
+				borderWidth: 1,
+				data: [
+					1200,
+					800,
+					400,
+					250,
+					300,
+					1000,
+					1200,
+				]
+			}]
+
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myBar = new Chart(ctx, {
+				type: 'bar',
+				data: barChartData,
+				options: {
+					responsive: true,
+					legend: {
+						position: 'top',
+					},
+					title: {
+						display: true,
+						text: 'Chart.js Bar Chart'
+					}
+				}
+			});
+
+		};
+
+		document.getElementById('randomizeData').addEventListener('click', function() {
+			var zero = Math.random() < 0.2 ? true : false;
+			barChartData.datasets.forEach(function(dataset) {
+				dataset.data = dataset.data.map(function() {
+					return zero ? 0.0 : randomScalingFactor();
+				});
+
+			});
+			window.myBar.update();
+		});
+
+		var colorNames = Object.keys(window.chartColors);
+		document.getElementById('addDataset').addEventListener('click', function() {
+			var colorName = colorNames[barChartData.datasets.length % colorNames.length];
+			var dsColor = window.chartColors[colorName];
+			var newDataset = {
+				label: 'Dataset ' + (barChartData.datasets.length + 1),
+				backgroundColor: color(dsColor).alpha(0.5).rgbString(),
+				borderColor: dsColor,
+				borderWidth: 1,
+				data: []
+			};
+
+			for (var index = 0; index < barChartData.labels.length; ++index) {
+				newDataset.data.push(randomScalingFactor());
+			}
+
+			barChartData.datasets.push(newDataset);
+			window.myBar.update();
+		});
+
+		document.getElementById('addData').addEventListener('click', function() {
+			if (barChartData.datasets.length > 0) {
+				var month = MONTHS[barChartData.labels.length % MONTHS.length];
+				barChartData.labels.push(month);
+
+				for (var index = 0; index < barChartData.datasets.length; ++index) {
+					// window.myBar.addData(randomScalingFactor(), index);
+					barChartData.datasets[index].data.push(randomScalingFactor());
+				}
+
+				window.myBar.update();
+			}
+		});
+
+		document.getElementById('removeDataset').addEventListener('click', function() {
+			barChartData.datasets.pop();
+			window.myBar.update();
+		});
+
+		document.getElementById('removeData').addEventListener('click', function() {
+			barChartData.labels.splice(-1, 1); // remove the label first
+
+			barChartData.datasets.forEach(function(dataset) {
+				dataset.data.pop();
+			});
+
+			window.myBar.update();
+		});
+	</script>
+</body>
+
+</html>
