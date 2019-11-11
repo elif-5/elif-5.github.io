@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>华科的笔记</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    body {
+      display: flex;
+      background-color: #e7eef2;
+    }
+    iframe {
+      flex: 1;
+    }
+    aside {
+      overflow-y: scroll;
+      padding: 2em;
+      width: 240px;
+      background-color: #f0f0f0;
+      box-shadow: inset 1px 0 rgba(0,0,0,0.05), inset 4px 0 8px -2px rgba(0,0,0,0.08);
+      line-height: 2;
+    }
+
+    aside > h2 {
+      margin: 0;
+      color: #789;
+    }
+
+    aside > ol > li {
+      color: #567;
+      font-size: 12px;
+    }
+    aside > ol > li > a {
+      color: #345;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <iframe name="main" frameborder="0" src="introduction.html"></iframe>
+  <aside>
+    <h2>Table of Contents</h2>
+    <ol>
+     <li><a href="book1.html" target="main">《项目管理》</a></li>
+     <li><a href="04-admin-dashboard.html" target="main">等待补充</a></li>
+     <li><a href="05-admin-post-list.html" target="main">等待补充</a></li>
+     <li><a href="06-admin-post-delete.html" target="main">等待补充</a></li>
+     <li><a href="07-admin-post-add.html" target="main">等待补充</a></li>
+     <li><a href="08-admin-category.html" target="main">等待补充</a></li>
+     <li><a href="09-admin-comment.html" target="main">等待补充</a></li>
+     <li><a href="10-admin-user.html" target="main">等待补充</a></li>
+     <li><a href="11-admin-options.html" target="main">等待补充</a></li>
+     <li><a href="12-admin-nav-menu.html" target="main">等待补充</a></li>
+     <li><a href="代码总结目录.html" target="main">等待补充</a></li>
+     <li><a href="代码总结目录.html" target="main">等待补充</a></li>
+    </ol>
+  </aside>
+
+<script language = JavaScript>
+function password() {
+var testV = 1;
+var pass1 = prompt('请输入密码:', '');
+while (testV < 3) {
+  if (!pass1) history.go(-1);
+  if (pass1 == "hust") {
+alert('密码正确!');
+break;
+}
+testV += -1;
+var pass1 = prompt('密码错误!请重新输入:');
+}
+if (pass1 != "password" & testV == 3) history.go(-1);
+return " ";
+}
+document.write(password());
+</script>
+</body>
+</html>

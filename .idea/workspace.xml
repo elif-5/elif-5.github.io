@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f3ac86b2-8afb-4d3f-b044-c437c86c59de" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/cases/CSS/01_manwei/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/cases/CSS/01_manwei/ppt.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/cases/CSS/01_manwei/ppt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/graph.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/graph.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/innerhtml.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/innerhtml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/garphic/chartjs/zhuzhuang_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/garphic/chartjs/zhuzhuang_01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/garphic/chartjs/zhuzhuang_02.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/garphic/chartjs/zhuzhuang_02.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="173" column="23" lean-forward="true" selection-start-line="173" selection-start-column="23" selection-end-line="173" selection-end-column="23" />
+            <state relative-caret-position="156">
+              <caret line="155" column="25" lean-forward="true" selection-start-line="155" selection-start-column="25" selection-end-line="155" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#3;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#li#0;n#ul#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
@@ -36,24 +34,6 @@
                 <element signature="n#li#4;n#ul#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#li#5;n#ul#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/innerhtml.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/normalize.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -125,7 +105,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
     <option name="y" value="60" />
     <option name="width" value="1405" />
@@ -219,12 +199,23 @@
       <workItem from="1570604239908" duration="2031000" />
       <workItem from="1570606339305" duration="7000" />
       <workItem from="1570606919705" duration="1366000" />
-      <workItem from="1571039445754" duration="2878000" />
+      <workItem from="1571039445754" duration="4204000" />
+      <workItem from="1571563720057" duration="596000" />
+      <workItem from="1572429639651" duration="599000" />
+      <workItem from="1573390581202" duration="600000" />
     </task>
+    <task id="LOCAL-00001" summary="增加图标内页">
+      <created>1571042465851</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571042465851</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198401000" />
+    <option name="totallyTimeSpent" value="201522000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -237,7 +228,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.26221928" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.088507265" />
@@ -254,6 +244,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="调试" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -291,6 +282,10 @@
         <option value="1" />
       </list>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加图标内页" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加图标内页" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
@@ -414,13 +409,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/css/htmleaf-demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/css/htmleaf-demo.css" />
     <entry file="file://$USER_HOME$/Downloads/index.html" />
     <entry file="file://$USER_HOME$/Desktop/programer/cases/Js-practice/miniCases/轮播图全部功能版.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -634,6 +623,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/innerhtml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/normalize.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -643,8 +639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/graph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="173" column="23" lean-forward="true" selection-start-line="173" selection-start-column="23" selection-end-line="173" selection-end-column="23" />
+        <state relative-caret-position="156">
+          <caret line="155" column="25" lean-forward="true" selection-start-line="155" selection-start-column="25" selection-end-line="155" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#3;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#li#0;n#ul#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
@@ -654,13 +650,6 @@
             <element signature="n#li#4;n#ul#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#li#5;n#ul#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/innerhtml.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
         </state>
       </provider>
     </entry>
