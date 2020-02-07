@@ -158,8 +158,8 @@
 .img04{
     background: url("../img/book/book4.jpg");
 }
-.img000{
-    background: url("../img/book/book4.jpg");
+.img05{
+    background: url("../img/book/book5.jpg");
 }
 .books li a {
     line-height: 30px;
@@ -211,7 +211,7 @@
     margin-top: 60px;
     height: 360px;
     overflow: hidden;
-    width: 500px;
+    max-width: 500px;
     /*border-right: #c2c2c2 1px solid;*/
     padding-right: 40px;
 }
@@ -229,16 +229,11 @@
     overflow: hidden;
     box-shadow: 0 3px 3px #999;
 }
-.bookimg img {
-
-
-}
 .booktitle {
     width: 100%;
     font-size: 30px;
     float: left;
     font-weight: 700;
-    display: inline-block;
     margin-top: 10px;
 }
 .booktitle:hover {
@@ -329,7 +324,6 @@
 @media (max-width: 880px) {
     .types {
         margin-bottom: 40px;
-        width: 100%;
         overflow: hidden;
         height: 100%;
     }
